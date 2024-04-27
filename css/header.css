@@ -1,0 +1,350 @@
+/* Точки медии */
+/*
+max-width: 549px
+max-width: 899px
+
+min-width: 900px
+min-width: 1100px
+*/
+
+
+/* ----------------------------- Раскладка шапки (верх) ----------------------------- */
+.header__top {
+  display: grid;
+  align-items: center;
+  grid-template-areas: "burger logo tools";
+  grid-template-columns: 60px 175px auto;
+
+  @media (min-width: 900px) {
+    padding: var(--main-margin) var(--main-side-margin);
+    grid-template-areas: "top-nav tools"
+                         "logo logo";
+    grid-template-columns: auto auto;
+  }
+
+  @media (min-width: 1100px) {
+    padding: var(--main-margin) var(--main-side-margin);
+    grid-template-areas: "logo top-nav tools";
+    grid-template-columns: 175px auto auto;
+  }
+
+  @media (max-width: 549px) {
+      grid-template-areas: "burger tools"
+                           "logo";
+      grid-template-columns: auto auto;
+      justify-content: center;
+      padding-top: 75px;
+  }
+}
+
+.header__burger-menu {
+  grid-area: burger;
+  @media (min-width: 900px) {display: none;}
+}
+
+.header__logo {
+  grid-area: logo;
+
+  @media (min-width: 900px) and (max-width: 1099px) {justify-self: center; padding-top: 20px;}
+}
+
+.header__nav {
+  grid-area: top-nav;
+  @media (max-width: 899px) {display: none;}
+}
+
+.header__tools {
+  grid-area: tools;
+  justify-self: end;
+}
+
+
+
+/* ---------------------------------------------------------- */
+/* Бургерное меню */
+.burger-menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 0;
+  width: 44px;
+  height: 44px;
+  color: var(--titles-color);
+
+  @media (max-width: 549px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+  }
+}
+
+.burger-menu-button:hover {
+  cursor: pointer;
+  color: var(--red-color);
+}
+
+
+
+/* ---------------------------------------------------------- */
+/* Логотип */
+.header__logo svg {display: block;}
+
+
+
+/* ---------------------------------------------------------- */
+/* Верхнее меню */
+.top-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 2px 0 0;
+  padding: 0;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: var(--s-size);
+  color: var(--body-text-color);
+}
+
+.top-menu__link {
+  color: var(--body-text-color);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.top-menu__link:hover,
+.top-menu__link:active {
+  color: var(--red-color);
+}
+
+.top-menu__link svg {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+
+
+/* ---------------------------------------------------------- */
+/* Инструменты (ЛК, корзина, поиск, избранное) */
+.tools-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @media (max-width: 549px) {
+    background: var(--page-color);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: flex-end;
+    z-index: 10;
+  }
+
+  @media (max-width: 899px) {padding-right: 20px;}
+
+  @media (max-width: 350px) {gap: 10px;}
+  @media (max-width: 280px) {gap: 5px;}
+}
+
+.tools-menu__search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 0;
+  width: 44px;
+  height: 44px;
+}
+
+.tools-menu__search-button:hover {
+  cursor: pointer;
+  color: var(--red-color);
+}
+
+.tools-menu__account-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  color: var(--body-text-color);
+  margin-right: 10px;
+}
+
+.tools-menu__account-link:hover,
+.tools-menu__account-link:active {
+  color: var(--red-color);
+}
+
+.tools-menu__favorites {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  color: var(--body-text-color);
+  margin-right: 20px;
+}
+
+.tools-menu__favorites:hover,
+.tools-menu__favorites:active {
+  color: var(--red-color);
+}
+
+.tools-menu__cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  color: var(--body-text-color);
+}
+
+.tools-menu__cart:hover,
+.tools-menu__cart:active {
+  color: var(--red-color);
+}
+
+.tools-menu__amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--titles-color);
+  border-radius: 50%;
+  color: #fff;
+  font-size: var(--s-size);
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  margin-left: 3px;
+}
+
+.tools-menu__favorites:hover .tools-menu__amount,
+.tools-menu__favorites:active .tools-menu__amount,
+.tools-menu__cart:hover .tools-menu__amount,
+.tools-menu__cart:active .tools-menu__amount  {
+  background: var(--red-color);
+}
+
+
+
+
+/* ----------------------------- Раскладка шапки (основная часть) ----------------------------- */
+.header__main {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-template-rows: 115px 68px auto;
+  grid-template-areas: "header-title"
+                       "header-breadcrumbs"
+                       "header-img";
+
+
+ @media (min-width: 900px) {
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 205px 68px;
+   grid-template-areas: "header-title header-img"
+                        "header-breadcrumbs header-img";
+   gap: 0 40px;
+ }
+
+ @media (min-width: 1100px) {gap: 0 80px;}
+
+ @media (max-width: 549px) { grid-template-rows: 80px 68px auto;}
+}
+
+
+/* точко-фон */
+.header__main::before {
+  content: "";
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' preserveAspectRatio='none' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect x='0' y='0' width='2' height='2' stroke='none' fill='%23444444'/%3E%3C/svg%3E") repeat;
+  width: 354px;
+  height: 322px;
+  position: absolute;
+  top: 15px;
+  left: var(--main-side-margin);
+  z-index: -1;
+}
+
+@media (max-width: 899px) {
+  .header__main::before {display: none;}
+}
+
+.header__title {
+  grid-area: header-title;
+  align-self: end;
+  padding-left: var(--header-left-margin);
+}
+
+.header__breadcrumbs {
+  grid-area: header-breadcrumbs;
+  align-self: end;
+}
+
+.header__img {grid-area: header-img;}
+
+@media (min-width: 900px) {
+  .header__img {
+    padding-right: var(--main-side-l-margin);
+  }
+}
+
+
+
+
+/* ---------------------------------------------------------- */
+/* Хлебные крошки */
+.breadcrumbs {
+  margin: 0;
+  padding: 0 0 25px var(--header-left-margin);
+  list-style-type: none;
+  display: flex;
+  border-bottom: 2px solid var(--titles-color);
+  font-size: var(--s-size);
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.breadcrumbs__item {
+  margin: 0 12px 0 0;
+  padding: 0;
+  color: var(--red-color);
+}
+
+.breadcrumbs__item:first-child {
+  border-left: 2px solid var(--titles-color);
+  padding-left: 10px;
+}
+
+.breadcrumbs a,
+.breadcrumbs a:link,
+.breadcrumbs a:visited {
+  color: var(--titles-color);
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: var(--red-color);
+}
+
+
+
+/* ---------------------------------------------------------- */
+/* Главная картинка */
+.header-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
