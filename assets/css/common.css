@@ -1,0 +1,66 @@
+@charset "UTF-8";
+:root {
+  --body-text-color: #444;
+  --titles-color: #000;
+  --red-color: #ff8e8e;
+  --green-color: #95ccb5;
+  --gray-color: #999;
+  --page-color: #e5e5e5;
+  --main-margin: 15px;
+  --main-side-margin: 20px;
+  --main-side-l-margin: 60px;
+  --header-left-margin: 20px;
+  --s-size: 14px;
+  --f-size--h1: 60px; }
+
+:root {
+  --s-size: 14px;
+  --f-size--h1: 60px; }
+  @media (min-width: 900px) {
+    :root {
+      --f-size--h1: 80px; } }
+
+:root {
+  --main-margin: 15px;
+  --main-side-margin: 20px;
+  --main-side-l-margin: 60px;
+  --header-left-margin: 20px; }
+  @media (max-width: 549px) {
+    :root {
+      --header-left-margin: 90px; } }
+  @media (min-width: 900px) {
+    :root {
+      --main-margin: 55px;
+      --main-side-margin: 60px;
+      --header-left-margin: 200px; } }
+  @media (min-width: 1200px) {
+    :root {
+      --header-left-margin: 390px;
+      --main-side-l-margin: 120px;
+      --main-side-l-margin: 120px; } }
+
+body {
+  font-family: "Raleway", sans-serif;
+  background: #fff;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 200px 1fr auto; }
+
+/* -----------------------------Типография ----------------------------- */
+/* ---------------------------------------------------------- */
+/* Основной заголовок */
+.title-1 {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--titles-color);
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--f-size--h1);
+  line-height: 1;
+  text-transform: capitalize;
+  margin: 0; }

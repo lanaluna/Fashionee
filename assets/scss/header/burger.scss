@@ -1,0 +1,35 @@
+// -----------------------------------------------------------------------
+// Бургер-меню
+// -----------------------------------------------------------------------
+
+
+
+@import 'helpers/helper.scss';
+
+
+
+.burger-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    width: 44px;
+    height: 44px;
+    color: var(--titles-color);
+  
+    @media (max-width: $media--m-mobile-end) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 20;
+    }
+  }
+  
+  .burger-menu-button:hover {
+    cursor: pointer;
+    color: var(--red-color);
+  }
+  
