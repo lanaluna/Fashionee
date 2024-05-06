@@ -4,7 +4,7 @@
 
 
 
-@import 'helpers/helper.scss';
+@import '../helpers/helper.scss';
 
 
 
@@ -19,13 +19,6 @@
     width: 44px;
     height: 44px;
     color: var(--titles-color);
-  
-    @media (max-width: $media--m-mobile-end) {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 20;
-    }
   }
   
   .burger-menu-button:hover {

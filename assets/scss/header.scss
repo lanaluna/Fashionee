@@ -17,7 +17,6 @@
     }
   
     @media (min-width: $media--desktop-start) {
-      padding: var(--main-margin) var(--main-side-margin);
       grid-template-areas: "logo top-nav tools";
       grid-template-columns: 175px auto auto;
     }
@@ -33,13 +32,24 @@
   
   .header__burger-menu {
     grid-area: burger;
+
     @media (min-width: $media--tablet-start) {display: none;}
+
+    @media (max-width: $media--m-mobile-end) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+    }
   }
   
   .header__logo {
     grid-area: logo;
-  
-    @media (min-width: $media--tablet-start) and (max-width: $media--tablet-end) {justify-self: center; padding-top: 20px;}
+
+    @media (min-width: $media--tablet-start) and (max-width: $media--tablet-end) {
+        justify-self: center;
+        padding-top: 20px;
+    }
   }
   
   .header__nav {
@@ -50,6 +60,17 @@
   .header__tools {
     grid-area: tools;
     justify-self: end;
+
+    @media (max-width: $media--m-mobile-end) {
+        background: var(--page-color);
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        justify-content: flex-end;
+        z-index: 10;
+    }
   }
   
 
@@ -81,7 +102,6 @@
    }
   
    @media (min-width: $media--desktop-start) {gap: 0 80px;}
-  
    @media (max-width: $media--m-mobile-end) { grid-template-rows: 80px 68px auto;}
   }
   

@@ -4,7 +4,7 @@
 
 
 
-@import 'helpers/helper.scss';
+@import '../helpers/helper.scss';
 
 
 
@@ -13,19 +13,7 @@
     align-items: center;
     gap: 15px;
   
-    @media (max-width: $media--m-mobile-end) {
-      background: var(--page-color);
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      justify-content: flex-end;
-      z-index: 10;
-    }
-  
     @media (max-width: $media--mobile-end) {padding-right: 20px;}
-  
     @media (max-width: 350px) {gap: 10px;}
     @media (max-width: 280px) {gap: 5px;}
   }
