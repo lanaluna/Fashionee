@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------
+// Подвал. Часть с копирайтом и платежами.
+// -----------------------------------------------------------------------
+
+
+
+.footer__bottom {
+    border-top: 1px solid var(--body-text-color--opacity20);
+    padding-top: 20px;
+    margin-top: 60px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+    @media (min-width: 700px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer__bottom-payments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer__pay-system-header {
+    @media (max-width: 380px) {
+        width: 100%;
+    }
+}

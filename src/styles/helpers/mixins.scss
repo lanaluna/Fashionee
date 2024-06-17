@@ -1,0 +1,16 @@
+@mixin font-family-1 {font-family: "Raleway", sans-serif;}
+
+@mixin font-family-2 {font-family: "Josefin Sans", sans-serif;}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin dots-bg {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' preserveAspectRatio='none' width='32' height='32' viewBox='0 0 32 32'%3E%3Crect x='0' y='0' width='2' height='2' stroke='none' fill='%23444444'/%3E%3C/svg%3E") repeat;
+    position: absolute;
+    z-index: -1;
+}

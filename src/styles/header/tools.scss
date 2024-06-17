@@ -1,0 +1,100 @@
+// -----------------------------------------------------------------------
+// Инструменты (избранное, аккаунт и т.д.)
+// -----------------------------------------------------------------------
+
+
+
+.tools-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
+  
+    @media (min-width: 350px) {gap: 15px; padding-right: 15px;}
+    @media (min-width: $media--tablet-start) {gap: 10px; padding-right: 0;}
+    @media (min-width: $media--desktop-start) {gap: 20px;}
+  }
+
+  .tools-menu__search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    width: 44px;
+    height: 44px;
+  }
+  
+  .tools-menu__search-button:hover {
+    cursor: pointer;
+    color: var(--red-color);
+  }
+  
+  .tools-menu__account-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    text-decoration: none;
+    color: var(--body-text-color);
+  }
+  
+  .tools-menu__account-link:hover,
+  .tools-menu__account-link:active {
+    color: var(--red-color);
+  }
+  
+  .tools-menu__favorites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 44px;
+    text-decoration: none;
+    color: var(--body-text-color);
+  }
+  
+  .tools-menu__favorites:hover,
+  .tools-menu__favorites:active {
+    color: var(--red-color);
+  }
+  
+  .tools-menu__cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 44px;
+    text-decoration: none;
+    color: var(--body-text-color);
+  }
+  
+  .tools-menu__cart:hover,
+  .tools-menu__cart:active {
+    color: var(--red-color);
+  }
+  
+  .tools-menu__amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--titles-color);
+    border-radius: 50%;
+    color: #fff;
+    font-size: var(--s-size);
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 3px;
+  }
+  
+  .tools-menu__favorites:hover .tools-menu__amount,
+  .tools-menu__favorites:active .tools-menu__amount,
+  .tools-menu__cart:hover .tools-menu__amount,
+  .tools-menu__cart:active .tools-menu__amount  {
+    background: var(--red-color);
+  }

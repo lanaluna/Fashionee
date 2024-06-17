@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------
+// Подвал. Часть с логотипом.
+// -----------------------------------------------------------------------
+
+
+
+.footer__part-logo {
+    position: relative;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--body-text-color--opacity20);
+}
+
+.footer__logo {
+    margin-bottom: 25px;
+}

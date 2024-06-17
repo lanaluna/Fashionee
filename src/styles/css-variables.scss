@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------
+// CSS-переменные
+// -----------------------------------------------------------------------
+
+
+
+// -----------------------------------------------------------------------
+// Цвета
+
+:root {
+    --body-text-color: #444;
+    --body-text-color--opacity20: rgb(68, 68, 68, .2);
+    --titles-color: #000;
+    --red-color: #ff8e8e;
+    --green-color: #95ccb5;
+    --gray-color: #999;
+    --page-color: #e5e5e5;
+}
+
+
+  
+// -----------------------------------------------------------------------
+// Размеры шрифтов
+
+:root {  
+    --xs-size: 12px;
+    --s-size: 14px;
+    --m-size: 16px;
+    --f-size--h1: 60px;
+
+    @media (min-width: $media--tablet-start) {
+        --f-size--h1: 80px;
+    }
+  }
+
+
+
+// -----------------------------------------------------------------------
+// Отступы
+
+:root {
+    --main-side-margin: 0; // поля сайта
+    --header-margin: 10px; // отступ от границ по краям у блока шапки с картинкой
+    --footer-margin: 10px;
+
+    @media (min-width: $media--tablet-start) {
+        --main-side-margin: 35px;
+        --header-margin: 35px;
+    }
+
+      
+  @media (min-width: $media--desktop-start) {
+        --main-side-margin: 55px;
+        --header-margin: 55px;
+        --desktop-content-margin: 185px;
+    }
+
+    @media (min-width: $media--l-desktop-start) {
+        --desktop-content-margin: 385px;
+    }
+}

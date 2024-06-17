@@ -1,0 +1,137 @@
+// -----------------------------------------------------------------------
+// Раскладка шапки (верх)
+// -----------------------------------------------------------------------
+
+
+
+
+.header {display: block;}
+
+.header__top {
+    display: grid;
+    align-items: center;
+    grid-template-areas: "logo top-nav tools";
+    grid-template-columns: 111px 1fr auto;
+    padding: 45px var(--main-side-margin) 0;
+
+    @media (max-width: $media--mobile-end) {
+        grid-template-areas: "burger logo menu tools";
+        grid-template-columns: 60px 0 0 auto;
+        background: #cfe7e6;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 0;
+    }
+}
+
+.header__burger-menu {
+    grid-area: burger;
+
+    @media (min-width: $media--tablet-start) {display: none;}
+}
+
+.header__logo {
+    grid-area: logo;    
+
+    @media (max-width: 500px) {display: none;}
+}
+
+.header__nav {
+    grid-area: top-nav;
+    padding-left: 40px;
+    @media (max-width: $media--mobile-end) {display: none;}
+    @media (min-width: $media--desktop-start) {padding-left: 60px;}
+}
+
+.header__tools {
+    grid-area: tools;
+    justify-self: end;
+}
+
+.header__logo-mobile {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    @media (min-width: 501px) {display: none;}
+}
+
+@import 'header/burger.scss/';
+@import 'header/logo.scss/';
+@import 'header/top-menu.scss/';
+@import 'header/tools.scss/';
+
+
+
+// -----------------------------------------------------------------------
+// Раскладка шапки (основная часть)
+// -----------------------------------------------------------------------
+
+.header__main {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 115px 69px auto;
+    grid-template-areas: "header-title"
+                          "header-breadcrumbs"
+                          "header-img";
+  
+  
+    @media (min-width: $media--tablet-start) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 205px 69px;
+      grid-template-areas: "header-title header-img"
+                          "header-breadcrumbs header-img"
+                          "null header-img";
+      gap: 0 40px;
+      margin-top: 35px;
+    }
+  
+    @media (min-width: $media--desktop-start) {gap: 0 80px; margin-top: 70px;}
+    @media (max-width: $media--m-mobile-end) { grid-template-rows: 80px 68px auto;}
+  }
+    
+    
+  // точко-фон
+  .header__main::before {
+    @include dots-bg;
+    width: 254px;
+    height: 222px;
+    top: 15px;
+    left: var(--header-margin);
+  }
+  
+  @media (max-width: $media--mobile-end) {
+    .header__main::before {display: none;}
+  }
+  
+  .header__title {
+    grid-area: header-title;
+    align-self: end;
+    padding-left: var(--header-margin);
+
+    @media (min-width: $media--desktop-start) {
+        padding-left: var(--desktop-content-margin);
+    }
+  }
+  
+  .header__breadcrumbs {
+    grid-area: header-breadcrumbs;
+    align-self: end;    
+  }
+  
+  .header__img {grid-area: header-img;}
+  
+  @media (min-width: $media--tablet-start) {
+    .header__img {
+      padding-right: var(--main-side-l-margin);
+    }
+  }
+  
+  
+  @import 'header/breadcrumbs.scss/';
+  @import 'header/header-img.scss/';
+
+

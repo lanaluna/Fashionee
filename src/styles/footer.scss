@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------
+// Подвал
+// -----------------------------------------------------------------------
+
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    gap: 30px 40px;
+    color: var(--body-text-color);
+    font-size: var(--s-size);
+    line-height: 1.7;
+    padding: 40px var(--footer-margin) 20px;
+    border-top: 20px solid #ccc;
+    position: relative;
+
+    p {margin: 0;}    
+
+    @media (min-width: 600px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "footer-logo footer-social"
+                             "footer-about footer-useful"
+                             "footer-newsletter footer-newsletter"
+                             "footer-bottom footer-bottom";
+    }
+
+    @media (min-width: $media--tablet-start) {
+        padding: 60px var(--main-side-margin) 20px;
+    }
+
+    @media (min-width: $media--desktop-start) {
+        padding: 80px var(--desktop-content-margin) 20px;
+    }
+
+    @media (min-width: $media--l-desktop-start) {
+        padding: 110px var(--desktop-content-margin) 20px;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        grid-template-areas: "footer-logo footer-about footer-useful footer-newsletter"
+                             "footer-social footer-about footer-useful footer-newsletter"
+                             "footer-bottom footer-bottom footer-bottom footer-bottom";
+    }
+}
+
+// точко-фон
+.footer::before {
+    @media (min-width: $media--desktop-start) {
+        @include dots-bg;
+        width: 130px;
+        height: 130px;
+        top: 30px;
+        left: 30px;
+    }  
+}
+
+// точко-фон
+.footer::after {
+    @media (min-width: $media--desktop-start) {
+        @include dots-bg;
+        width: 226px;
+        height: 226px;
+        right: 30px;
+        top: 85px;
+    }  
+}
+
+.footer__part-logo {grid-area: footer-logo};
+.footer__part-social {grid-area: footer-social};
+.footer__part-about {grid-area: footer-about};
+.footer__part-useful {grid-area: footer-useful};
+.footer__part-newsletter {grid-area: footer-newsletter};
+.footer__bottom {grid-area: footer-bottom};
+
+
+@import 'footer/logo.scss/';
+@import 'footer/part-logo.scss/';
+@import 'footer/part-social.scss/';
+@import 'footer/part-logo.scss/';
+@import 'footer/part-newsletter.scss/';
+@import 'footer/footer-list.scss/';
+@import 'footer/bottom.scss/';

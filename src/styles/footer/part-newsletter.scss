@@ -1,0 +1,51 @@
+// -----------------------------------------------------------------------
+// Подвал. Часть с подпиской.
+// -----------------------------------------------------------------------
+
+
+
+.footer__form {    
+    position: relative;
+    margin-top: 35px;
+    max-width: 500px;
+}
+
+.footer__input {
+    border: 0;
+    border-bottom: 1px solid var(--body-text-color--opacity20);
+    font-size: var(--s-size);
+    height: 44px;
+    line-height: 44px;
+    color: var(--body-text-color);
+    width: 100%;
+    padding-right: 44px;
+    box-sizing: border-box;
+}
+
+.footer__input:focus {
+    border-color: var(--green-color);
+    outline: 0;
+}
+
+.footer__input::placeholder {
+    @include font-family-1;
+    font-size: var(--s-size);
+    color: var(--body-text-color);
+    opacity: .5;
+}
+
+.footer__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 43px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background: #fff;
+    color: var(--body-text-color);
+}
+
+.footer__button svg {margin-bottom: 5px;}

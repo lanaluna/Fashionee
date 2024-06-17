@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------
+// Основные стили
+// -----------------------------------------------------------------------
+
+
+
+body {
+    @include font-family-1;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    @media (max-width: $media--mobile-end) {padding-top: 44px;}
+  }
+
+  a {text-decoration: none; color: var(--body-text-color);}
+  a:visited {color: var(--body-text-color);}
+
+  a:hover,
+  a:focus {
+    color: var(--red-color);
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-rows: min-content 1fr auto;
+  }
+  
+
+  
+  /* -----------------------------Типография ----------------------------- */
+  
+  /* ---------------------------------------------------------- */
+  /* Основной заголовок */
+  .title-1 {
+    @include font-family-2;
+    margin: 0;
+    color: var(--titles-color);
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--f-size--h1);
+    line-height: 1;
+    text-transform: capitalize;
+  }
+
+  h5 {
+    @include font-family-2;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--titles-color);
+    font-weight: 500;
+    margin: 0 0 20px;
+  }
+  
