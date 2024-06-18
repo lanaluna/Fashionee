@@ -78,15 +78,292 @@
         </nav>
 
         <picture class="header__img">
-          <img src="https://fakeimg.pl/800x400/?text=Main Picture&font=Josefin Sans" alt="" class="header-img">
+          <img src="/src/images/main-img.png" alt="" class="header-img">
         </picture>
       </div>
-
     </header>
 
-    <main class="main">
 
+
+
+
+
+    <main class="main">
+      <div class="content">
+        <div class="search">
+          <form action="" class="search__form">
+            <input type="text" placeholder="Search" class="search__input">
+            <button type="submit" class="search__button">
+              <svg width="18" height="18" aria-hidden="true" focusable="false">
+                <use href="images/svg-sprite.svg#search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="filter">
+          <button class="filter__open-mobile">Открыть фильтр</button>
+          <div class="filter__part">
+            <h4 class="filter__header content__header">Categories</h4>
+            <ul class="filter__btn-list">
+              <li><button class="filter__btn-list-button">All</button></li>
+              <li><button class="filter__btn-list-button">Man</button></li>
+              <li><button class="filter__btn-list-button">Woman</button></li>
+              <li><button class="filter__btn-list-button">Accessories</button></li>
+              <li><button class="filter__btn-list-button">New Arrivals</button></li>
+            </ul>
+          </div>
+
+          <div class="filter__part">
+            <h4 class="filter__header content__header">Price</h4>
+            //Todo
+            Подумать как сделать
+          </div>
+
+          <div class="filter__part">
+            <h4 class="filter__header content__header">Colors</h4>
+            <ul class="filter__checkbox-list">
+              <li><label><input type="checkbox" name="" id="">Black</label></li>
+              <li><label><input type="checkbox" name="" id="">Blue</label></li>
+              <li><label><input type="checkbox" name="" id="">Red</label></li>
+              <li><label><input type="checkbox" name="" id="">Yellow</label></li>
+              <li><label><input type="checkbox" name="" id="">Green</label></li>
+            </ul>
+          </div>
+
+          <div class="filter__button">
+            <button>Apply Filter</button>
+          </div>
+        </div>
+
+        <div class="goods">
+          <div class="goods__header">
+            <div class="goods__found">There are <b>67</b> products in this category</div>
+            <div class="goods__sort">//TODO Тут селект?</div>
+
+            <ul class="goods__cards-list">
+              <li class="goods__card">
+                <button class="goods__to-favorites">
+                  <svg width="19" height="18" aria-hidden="true" focusable="false" aria-label="Добавить в избранное">
+                    <use href="images/svg-sprite.svg#favorites"></use>
+                  </svg>
+                </button>
+                <button class="goods__click">
+                  <span class="goods__sale">Sale</span>
+                  <img src="/src/images/card-img.png" alt="">
+                </button>
+                <div class="goods__description">
+                  <div class="goods__name">Textured turtleneck with zip</div>
+                  <span class="goods__price">$53.99</span>
+                  <span class="goods__old-price">$59.99</span>
+                </div>
+              </li>
+              <li class="goods__card">
+                <button class="goods__to-favorites">
+                  <svg width="19" height="18" aria-hidden="true" focusable="false" aria-label="Добавить в избранное">
+                    <use href="images/svg-sprite.svg#favorites"></use>
+                  </svg>
+                </button>
+                <button class="goods__click">
+                  <span class="goods__sale">Sale</span>
+                  <img src="/src/images/card-img.png" alt="">
+                </button>
+                <div class="goods__description">
+                  <div class="goods__name">Textured turtleneck with zip</div>
+                  <span class="goods__price">$53.99</span>
+                </div>
+              </li>
+              <li class="goods__card">
+                <button class="goods__to-favorites">
+                  <svg width="19" height="18" aria-hidden="true" focusable="false" aria-label="Добавить в избранное">
+                    <use href="images/svg-sprite.svg#favorites"></use>
+                  </svg>
+                </button>
+                <button class="goods__click">
+                  <span class="goods__sale">Sale</span>
+                  <img src="/src/images/card-img.png" alt="">
+                </button>
+                <div class="goods__description">
+                  <div class="goods__name">Textured turtleneck with zip</div>
+                  <span class="goods__price">$53.99</span>
+                  <span class="goods__old-price">$59.99</span>
+                </div>
+              </li>
+              <li class="goods__card">
+                <button class="goods__to-favorites">
+                  <svg width="19" height="18" aria-hidden="true" focusable="false" aria-label="Добавить в избранное">
+                    <use href="images/svg-sprite.svg#favorites"></use>
+                  </svg>
+                </button>
+                <button class="goods__click">
+                  <span class="goods__sale">Sale</span>
+                  <img src="/src/images/card-img.png" alt="">
+                </button>
+                <div class="goods__description">
+                  <div class="goods__name">Textured turtleneck with zip</div>
+                  <span class="goods__price">$53.99</span>
+                  <span class="goods__old-price">$59.99</span>
+                </div>
+              </li>
+              <li class="goods__card">
+                <button class="goods__to-favorites">
+                  <svg width="19" height="18" aria-hidden="true" focusable="false" aria-label="Добавить в избранное">
+                    <use href="images/svg-sprite.svg#favorites"></use>
+                  </svg>
+                </button>
+                <button class="goods__click">
+                  <span class="goods__sale">Sale</span>
+                  <img src="/src/images/card-img.png" alt="">
+                </button>
+                <div class="goods__description">
+                  <div class="goods__name">Textured turtleneck with zip</div>
+                  <span class="goods__price">$53.99</span>
+                  <span class="goods__old-price">$59.99</span>
+                </div>
+              </li>
+              <li class="goods__card">
+                <button class="goods__to-favorites">
+                  <svg width="19" height="18" aria-hidden="true" focusable="false" aria-label="Добавить в избранное">
+                    <use href="images/svg-sprite.svg#favorites"></use>
+                  </svg>
+                </button>
+                <button class="goods__click">
+                  <span class="goods__sale">Sale</span>
+                  <img src="/src/images/card-img.png" alt="">
+                </button>
+                <div class="goods__description">
+                  <div class="goods__name">Textured turtleneck with zip</div>
+                  <span class="goods__price">$53.99</span>
+                  <span class="goods__old-price">$59.99</span>
+                </div>
+              </li>
+              <li class="goods__card">
+                <button class="goods__to-favorites">
+                  <svg width="19" height="18" aria-hidden="true" focusable="false" aria-label="Добавить в избранное">
+                    <use href="images/svg-sprite.svg#favorites"></use>
+                  </svg>
+                </button>
+                <button class="goods__click">
+                  <span class="goods__sale">Sale</span>
+                  <img src="/src/images/card-img.png" alt="">
+                </button>
+                <div class="goods__description">
+                  <div class="goods__name">Textured turtleneck with zip</div>
+                  <span class="goods__price">$53.99</span>
+                  <span class="goods__old-price">$59.99</span>
+                </div>
+              </li>
+              <li class="goods__card">
+                <button class="goods__to-favorites">
+                  <svg width="19" height="18" aria-hidden="true" focusable="false" aria-label="Добавить в избранное">
+                    <use href="images/svg-sprite.svg#favorites"></use>
+                  </svg>
+                </button>
+                <button class="goods__click">
+                  <span class="goods__sale">Sale</span>
+                  <img src="/src/images/card-img.png" alt="">
+                </button>
+                <div class="goods__description">
+                  <div class="goods__name">Textured turtleneck with zip</div>
+                  <span class="goods__price">$53.99</span>
+                  <span class="goods__old-price">$59.99</span>
+                </div>
+              </li>
+              <li class="goods__card">
+                <button class="goods__to-favorites">
+                  <svg width="19" height="18" aria-hidden="true" focusable="false" aria-label="Добавить в избранное">
+                    <use href="images/svg-sprite.svg#favorites"></use>
+                  </svg>
+                </button>
+                <button class="goods__click">
+                  <span class="goods__sale">Sale</span>
+                  <img src="/src/images/card-img.png" alt="">
+                </button>
+                <div class="goods__description">
+                  <div class="goods__name">Textured turtleneck with zip</div>
+                  <span class="goods__price">$53.99</span>
+                  <span class="goods__old-price">$59.99</span>
+                </div>
+              </li>
+            </ul>
+            <div class="goods__paginator">
+              <button class="goods__prev"></button>
+              <ul class="goods__paginator">
+                <li class__goods__paginator-prev>
+                  <button>
+                    <svg width="51" height="12" aria-hidden="true" focusable="false">
+                      <use href="images/svg-sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </li>
+
+                <li class__goods__paginator>
+                  <button class="active">
+                    1
+                  </button>
+                </li>
+                <li class__goods__paginator>
+                  <button>
+                    2
+                  </button>
+                </li>
+                <li class__goods__paginator>
+                  <button>
+                    3
+                  </button>
+                </li>
+
+                <li class__goods__paginator-next>
+                  <button>
+                    <svg width="51" height="12" aria-hidden="true" focusable="false">
+                      <use href="images/svg-sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <button class="goods__next"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="viewed">
+          <h4 class="content__header">Reviewed By You</h4>
+          <ul class="viewed__list">
+            <li class="viewed__item">
+              <img src="/src/images/viewed-img.png" alt="Retro style handbag" class="viewed__image">
+              <div class="viewed__text">
+                <span class="viewed__name">Retro style handbag</span>
+                <span class="viewed__price">$35.99</span>
+                <span class="viewed__old-price">$52.99</span>
+              </div>
+            </li>
+            <li class="viewed__item">
+              <img src="/src/images/viewed-img.png" alt="Retro style handbag" class="viewed__image">
+              <div class="viewed__text">
+                <span class="viewed__name">Retro style handbag</span>
+                <span class="viewed__price">$35.99</span>
+                <span class="viewed__old-price">$52.99</span>
+              </div>
+            </li>
+            <li class="viewed__item">
+              <img src="/src/images/viewed-img.png" alt="Retro style handbag" class="viewed__image">
+              <div class="viewed__text">
+                <span class="viewed__name">Retro style handbag</span>
+                <span class="viewed__price">$35.99</span>
+                <span class="viewed__old-price">$52.99</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="banner"><img src="/src/images/banner.png" alt="Скидки! Скидки!"></div>
+      </div>
     </main>
+
+
+
+
+
 
 
 
@@ -152,8 +429,8 @@
           <div class="footer__pay-system"><img src="/src/images/paoneer.png" alt="Paoneer"></div>
         </div>
       </div>
-
     </footer>
+
 </div>
 </body>
 </html>

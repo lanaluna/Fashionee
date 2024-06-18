@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------
+// Основная часть.
+// -----------------------------------------------------------------------
+
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "search"
+                         "filter"
+                         "content"
+                         "viewed"
+                         "banner";
+}
+
+.search {
+    grid-area: "search";
+}
+filter
+.search {
+    grid-area: "filter";
+}
+
+.content {
+    grid-area: "content";
+}
+
+.viewed {
+    grid-area: "viewed";
+}
+
+.banner {
+    grid-area: "banner";
+}
