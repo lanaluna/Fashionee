@@ -15,9 +15,10 @@
 
 .search {
     grid-area: "search";
+    padding: var(--content-margin);
 }
-filter
-.search {
+
+.filter {
     grid-area: "filter";
 }
 
@@ -32,3 +33,5 @@ filter
 .banner {
     grid-area: "banner";
 }
+
+@import 'content/search-form.scss/';
