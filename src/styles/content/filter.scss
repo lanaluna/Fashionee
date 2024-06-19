@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------
+// Основная часть. Фильтр.
+// -----------------------------------------------------------------------
+
+
+
+.filter {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    background: #fff;
+    padding: var(--content-margin);
+}
+
+.filter__close-mobile {
+    display: flex;
+    justify-content: end;
+}
+
+.filter__close-button {
+    @include button;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: var(--m-size);
+    border-bottom: 1px solid var(--body-text-color);
+}
+
+.filter__radio-list {
+    @include reset-list;
+    padding: 0 20px;
+}
+
+.filter__radio-list li {
+    position: relative;
+    overflow: hidden;
+}
+
+.filter__radio {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+}
+
+.filter__radio + .filter__radio-text {
+    color: var(--body-text-color);
+    font-size: var(--m-size);
+    line-height: 1.7;
+}
+
+.filter__radio + .filter__radio-text::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    background: currentColor;
+    position: relative;
+    top: -2px;
+    margin-right: 10px;
+}
+
+.filter__radio:checked + .filter__radio-text {
+    color: var(--red-color);
+}
+
+.filter__radio:checked + .filter__radio-text::before {
+    width: 25px;
+    height: 2px;
+}

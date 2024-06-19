@@ -14,24 +14,24 @@
 }
 
 .search {
-    grid-area: "search";
+    grid-area: search;
     padding: var(--content-margin);
 }
 
-.filter {
-    grid-area: "filter";
+.content__header {
+    @include font-family-2;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--titles-color);
+    border-bottom: 2px solid var(--titles-color);
+    font-weight: 500;
+    padding-bottom: 12px;
 }
 
-.content {
-    grid-area: "content";
-}
-
-.viewed {
-    grid-area: "viewed";
-}
-
-.banner {
-    grid-area: "banner";
-}
+.filter-container {grid-area: filter;}
+.content {grid-area: content;}
+.viewed {grid-area: viewed;}
+.banner {grid-area: banner;}
 
 @import 'content/search-form.scss/';
+@import 'content/filter.scss/';
