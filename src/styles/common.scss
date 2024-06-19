@@ -54,4 +54,31 @@ body {
     font-weight: 500;
     margin: 0 0 20px;
   }
+
+  .button {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: var(--titles-color);
+    font-size: var(--m-size);
+    color: #fff;
+    border: 0;
+    position: relative;
+
+    &:hover {
+      background: var(--red-color);
+      cursor: pointer;
+    }
+  }
+
+  button::after {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 2px;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    bottom: 0;
+  }
   

@@ -4,22 +4,34 @@
 
 
 
-.filter {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    overflow-y: auto;
-    background: #fff;
+.filter {    
     padding: var(--content-margin);
+
+    @media (max-width: $media--mobile-end) {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        overflow-y: auto;
+        background: #fff;
+        display: none;
+    } 
 }
 
 .filter__part {padding-top: 50px;}
 
+.filter-open-mobile {
+    padding: 25px var(--content-margin);
+    @media (min-width: $media--tablet-start) {display: none;}
+}
+
 .filter__close-mobile {
     display: flex;
     justify-content: end;
+    
+    @media (min-width: $media--tablet-start) {display: none;}
 }
 
 .filter__close-button {
@@ -123,5 +135,13 @@
     color: var(--body-text-color);
 }
 
+.filter__checkbox:checked + .filter__visual-checkbox {color: var(--red-color);}
 .filter__checkbox:checked + .filter__visual-checkbox svg:nth-child(2) {display: block;}
 .filter__checkbox:checked + .filter__visual-checkbox + .filter__checkbox-text {color: var(--red-color);}
+
+
+
+
+.filter__button {
+    padding-top: 50px;
+}
