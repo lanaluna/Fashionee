@@ -22,4 +22,8 @@
 
   <!-- Стрелка -->
   <symbol id="arrow" fill="none" viewBox="0 0 51 12"><path fill="currentColor" d="M.47 6.53a.75.75 0 0 1 0-1.06L5.243.697a.75.75 0 1 1 1.06 1.06L2.061 6l4.242 4.243a.75.75 0 0 1-1.06 1.06L.47 6.53ZM51 6.75H1v-1.5h50v1.5Z"/></symbol>
+
+  <!-- Чекбокс -->
+  <symbol id="checkbox" fill="none" viewBox="0 0 15 16"><path stroke="currentColor" d="M.5 1h14v14H.5z" opacity=".2"/></symbol>
+  <symbol id="checkbox-mark" fill="none" viewBox="0 0 10 8"><path fill="currentColor" d="M0 4.57 3.424 8 10 1.431 9.056.5 3.424 6.125.931 3.632 0 4.569Z"/></symbol>
 </svg>

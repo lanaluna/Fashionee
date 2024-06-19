@@ -43,6 +43,7 @@
     --header-margin: 10px; // отступ от границ по краям у блока шапки с картинкой
     --footer-margin: 10px;
     --content-margin: 10px;
+    --margin-filter-part: 20px;
 
     @media (min-width: $media--tablet-start) {
         --main-side-margin: 35px;

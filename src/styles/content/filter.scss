@@ -15,6 +15,8 @@
     padding: var(--content-margin);
 }
 
+.filter__part {padding-top: 50px;}
+
 .filter__close-mobile {
     display: flex;
     justify-content: end;
@@ -32,17 +34,18 @@
 
 .filter__radio-list {
     @include reset-list;
-    padding: 0 20px;
+    padding: 0 var(--margin-filter-part);
 }
 
 .filter__radio-list li {
     position: relative;
     overflow: hidden;
+    margin: 0;
+    padding: 0 0 10px;
 }
 
 .filter__radio {
     position: absolute;
-    top: -30px;
     left: -30px;
 }
 
@@ -72,3 +75,53 @@
     width: 25px;
     height: 2px;
 }
+
+
+
+
+
+.filter__checkbox-list {
+    @include reset-list;
+    padding: 0 var(--margin-filter-part);
+}
+
+.filter__checkbox-list li {
+    position: relative;
+    overflow: hidden;
+    font-size: var(--m-size);
+    margin: 0;
+    padding: 0 0 20px;
+}
+
+.filter__checkbox {
+    position: absolute;
+    left: -30px;
+}
+
+.filter__visual-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 16px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    margin-right: 10px;
+    color: var(--body-text-color);
+}
+
+.filter__visual-checkbox svg {display: block;}
+.filter__visual-checkbox svg:nth-child(2) {display: none;}
+
+.filter__visual-checkbox svg:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: var(--body-text-color);
+}
+
+.filter__checkbox:checked + .filter__visual-checkbox svg:nth-child(2) {display: block;}
+.filter__checkbox:checked + .filter__visual-checkbox + .filter__checkbox-text {color: var(--red-color);}
