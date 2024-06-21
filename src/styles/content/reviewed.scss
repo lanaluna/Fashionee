@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------------
+// Основная часть. Просмотренное.
+// -----------------------------------------------------------------------
+
+
+
+.reviewed {
+    padding: 50px var(--content-margin) 0;
+}
+
+.reviewed__list {
+    @include reset-list;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reviewed__item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.reviewed__image {
+    display: block;
+    width: 75px;
+    height: 85px;
+}
+
+.reviewed__text {
+    font-size: var(--s-size);
+    line-height: 1.4;
+    margin-bottom: 7px;
+}
+
+.reviewed__name {display: block;}
+
+.reviewed__price {
+    @include font-family-2;
+    line-height: 1;
+    color: var(--titles-color);
+}
+
+.reviewed__old-price {
+    @include font-family-2;
+    line-height: 1;
+    font-size: var(--xs-size);
+    font-weight: 400;
+    text-decoration: line-through;
+    margin-left: 5px;
+}

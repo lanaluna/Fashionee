@@ -9,16 +9,16 @@
     grid-template-areas: "search"
                          "filter"
                          "goods"
-                         "viewed"
+                         "reviewed"
                          "banner";
     padding-top: 60px;
 
     @media (min-width: $media--tablet-start) {
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 244px 1fr;
         grid-template-rows: min-content min-content min-content 1fr;
         grid-template-areas: "search goods"
                              "filter goods"
-                             "viewed goods"
+                             "reviewed goods"
                              "banner goods";
         gap: 0 40px;
         padding-top: 120px;
@@ -45,8 +45,10 @@
 
 .filter-container {grid-area: filter;}
 .goods {grid-area: goods;}
-.viewed {grid-area: viewed;}
+.reviewed {grid-area: reviewed;}
 .banner {grid-area: banner;}
 
 @import 'content/search-form.scss/';
 @import 'content/filter.scss/';
+@import 'content/reviewed.scss/';
+@import 'content/banner.scss/';
