@@ -5,6 +5,11 @@
 
 
 
+.search {
+    padding: var(--content-margin);
+    @media (min-width: $media--tablet-start) {margin-bottom: -20px;}
+}
+
 .search-form {    
     position: relative;
 }

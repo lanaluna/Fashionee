@@ -1,0 +1,112 @@
+// -----------------------------------------------------------------------
+// Основная часть. Блок с товарами.
+// -----------------------------------------------------------------------
+
+
+.goods {
+    padding: 0 var(--content-margin);
+}
+
+.goods__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.goods__cards-list {
+    @include reset-list;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 30px;
+
+    @media (min-width: $media--l-desktop-start) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.goods__card {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.goods__click {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: none;
+    width: 100%;
+    height: 360px;
+    cursor: pointer;
+}
+
+.goods__label {
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    min-width: 45px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.goods__label--sale {background-color: var(--red-color);}
+.goods__label--new {background-color: var(--green-color);}
+
+.goods__click img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.goods__to-favorites {
+    --favorites-heart-color: #fff;
+
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.goods__card[data-favorites="true"] .goods__to-favorites {
+    --favorites-heart-color: var(--body-text-color);
+}
+
+.goods__to-favorites:hover,
+.goods__card[data-favorites="true"]:hover .goods__to-favorites {
+    --favorites-heart-color: var(--red-color);
+    color: var(--red-color);
+}
+
+.favorites__heart {
+    fill: #fff;
+}
+
+.goods__description {margin-top: 20px;}
+
+.goods__name {margin-bottom: 14px;}
+
+.goods__price {
+    @include font-family-2;
+    font-size: 20px;
+    line-height: 1;
+    margin-right: 10px;
+}
+
+.goods__old-price {
+    @include font-family-2;
+    line-height: 1;
+    font-weight: 400;
+    text-decoration: line-through;
+}

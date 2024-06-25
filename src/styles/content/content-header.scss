@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------
+// Основная часть. Заголовки.
+// -----------------------------------------------------------------------
+
+
+
+.content__header {
+    @include font-family-2;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--titles-color);
+    border-bottom: 2px solid var(--titles-color);
+    font-weight: 500;
+    padding-bottom: 12px;
+    margin: 0 0 25px;
+}

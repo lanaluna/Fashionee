@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------
 
 
+
 .content {
     display: grid;
     grid-template-columns: 1fr;
@@ -20,35 +21,26 @@
                              "filter goods"
                              "reviewed goods"
                              "banner goods";
-        gap: 0 40px;
-        padding-top: 120px;
+        gap: 0 50px;
+        padding: 120px var(--main-side-margin) 0;
+    }
+
+    @media (min-width: $media--desktop-start) {
+        padding: 120px var(--desktop-content-margin) 0;
     }
 }
 
-.search {
-    grid-area: search;
-    padding: var(--content-margin);
 
-    @media (min-width: $media--tablet-start) {margin-bottom: -20px;}
-}
 
-.content__header {
-    @include font-family-2;
-    font-size: 24px;
-    line-height: 1.2;
-    color: var(--titles-color);
-    border-bottom: 2px solid var(--titles-color);
-    font-weight: 500;
-    padding-bottom: 12px;
-    margin: 0 0 25px;
-}
-
+.search {grid-area: search;}
 .filter-container {grid-area: filter;}
 .goods {grid-area: goods;}
 .reviewed {grid-area: reviewed;}
 .banner {grid-area: banner;}
 
-@import 'content/search-form.scss/';
-@import 'content/filter.scss/';
-@import 'content/reviewed.scss/';
-@import 'content/banner.scss/';
+@import 'content/content-header.scss';
+@import 'content/search.scss';
+@import 'content/filter.scss';
+@import 'content/reviewed.scss';
+@import 'content/banner.scss';
+@import 'content/goods.scss';
