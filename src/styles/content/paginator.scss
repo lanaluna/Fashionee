@@ -1,0 +1,63 @@
+// -----------------------------------------------------------------------
+// Пагинатор.
+// -----------------------------------------------------------------------
+
+
+
+.paginator {
+    margin-top: 60px;
+
+    button {display: block;}
+}
+
+.paginator__list {
+    @include reset-list;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.paginator__item button,
+.paginator__prev button,
+.paginator__next button {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.paginator__item button {
+    border-bottom: 3px solid currentColor;
+    padding: 0 0 3px;
+    min-width: 10px;
+    text-align: center;
+}
+
+.paginator__item button:not([disabled]):hover,
+.paginator__prev button:not([disabled]):hover,
+.paginator__next button:not([disabled]):hover {
+    color: var(--red-color);
+    opacity: 1;
+}
+
+.paginator__item button:not([disabled]) {opacity: 0.3;}
+
+.paginator__item button[disabled] {
+    color: var(--body-text-color);
+    font-weight: 500;
+    padding: 0 7px 3px;
+}
+
+.paginator__prev {padding-right: 10px;}
+.paginator__next {padding-left: 10px;}
+
+.paginator__prev button,
+.paginator__next button {
+    display: flex;
+    align-items: center;
+}
+
+.paginator__next button {
+    transform: rotate(180deg);
+}

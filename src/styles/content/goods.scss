@@ -16,19 +16,23 @@
 .goods__cards-list {
     @include reset-list;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 50px 30px;
 
-    @media (min-width: $media--l-desktop-start) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+    @media (min-width: 500px) {grid-template-columns: 1fr 1fr;}
+    @media (min-width: $media--l-desktop-start) {grid-template-columns: 1fr 1fr 1fr;}
 }
 
 .goods__card {
     margin: 0;
     padding: 0;
+    border: 0;    
+}
+
+.goods__img-wrapper {
     position: relative;
     z-index: 1;
+    max-width: 250px;
 }
 
 .goods__click {
@@ -62,7 +66,7 @@
 .goods__click img {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 100%;    
 }
 
 .goods__to-favorites {
