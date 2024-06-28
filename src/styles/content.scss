@@ -38,6 +38,8 @@
 .reviewed {grid-area: reviewed;}
 .banner {grid-area: banner;}
 
+
+
 @import 'content/content-header.scss';
 @import 'content/search.scss';
 @import 'content/filter.scss';
@@ -45,3 +47,4 @@
 @import 'content/banner.scss';
 @import 'content/goods.scss';
 @import 'content/paginator.scss';
+@import 'content/subscribe.scss';
