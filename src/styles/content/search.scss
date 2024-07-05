@@ -50,6 +50,7 @@
     border: 0;
     background: #fff;
     color: var(--body-text-color);
+    cursor: pointer;
 }
 
-
+.search-form__button:hover {color: var(--red-color);}

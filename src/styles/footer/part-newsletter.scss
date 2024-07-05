@@ -46,6 +46,9 @@
     border: 0;
     background: #fff;
     color: var(--body-text-color);
+    cursor: pointer;
 }
+
+.footer__button:hover {color: var(--red-color);}
 
 .footer__button svg {margin-bottom: 5px;}
