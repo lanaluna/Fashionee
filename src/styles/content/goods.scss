@@ -26,13 +26,14 @@
 .goods__card {
     margin: 0;
     padding: 0;
-    border: 0;    
+    border: 0;
+    max-width: 270px; 
 }
 
 .goods__img-wrapper {
     position: relative;
     z-index: 1;
-    max-width: 250px;
+    max-width: 100%;
 }
 
 .goods__click {

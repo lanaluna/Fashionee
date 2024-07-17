@@ -1,0 +1,48 @@
+// -----------------------------------------------------------------------
+// Основная часть. Селект.
+// -----------------------------------------------------------------------
+
+
+
+.select {position: relative;}
+  
+.select select {display: none;}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 15px;
+    height: 9px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 15 9'%3E%3Cpath fill='%23000' d='M0 2V0h15v2zM7.5 8.333l-3.031-3.5h6.062L7.5 8.333Z'/%3E%3C/svg%3E");
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+.select-items div, .select-selected {
+    @include font-family-1;
+    color: var(--titles-color);
+    font-size: var(--s-size);
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.select-items div {border: 1px solid var(--body-text-color--opacity20); border-top: none;}
+.select-selected {border-bottom: 1px solid var(--body-text-color--opacity20);}
+
+.select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-hide {display: none;}
+
+.select-items div:hover, .same-as-selected {background-color: rgba(0, 0, 0, 0.1);}
