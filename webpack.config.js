@@ -13,8 +13,8 @@ console.log('mode: ' + mode);
 module.exports = {
     mode: mode,
     entry: {
-        script1: './src/index.js',
-        //script2: './src/index2.js',
+        index: './src/index.js',
+        cart: './src/cart.js',
     },
     output: {
         filename: '[name].[contenthash].js',
@@ -29,6 +29,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
         }),
+        new HtmlWebpackPlugin({  // Also generate a cart.html
+            filename: 'cart.html',
+            template: './src/cart.html'
+        })
     ],
     module: {
         rules: [

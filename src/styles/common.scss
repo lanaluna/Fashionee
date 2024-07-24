@@ -57,6 +57,15 @@ body {
     margin: 0 0 20px;
   }
 
+  h4 {
+    @include font-family-2;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--titles-color);
+    font-weight: normal;
+    margin: 0 0 20px;
+  }
+
   h5 {
     @include font-family-2;
     font-size: 20px;

@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------
+// Корзина. Итоговая информация.
+// -----------------------------------------------------------------------
+
+
+
+
+.order {
+    display: block;    
+    border: 1px solid rgba(#444, .1);
+    padding: 30px;
+}
+
+.order__title {
+    @include font-family-2;
+}
+
+.order__list {
+    @include reset-list;
+    margin-top: -16px;
+}
+
+.order__item {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--body-text-color--opacity20);
+    min-height: 45px;
+
+    &:first-of-type {border-top: 0;}
+}
+
+.order__price-text,
+.order__promo-text,
+.order__delivery-text {
+    display: flex;
+    align-items: center;
+    font-size: var(--xs-size);
+}
+
+.order__delivery-text sub {font-size: 10px;}
+
+.order__price-amount,
+.order__promo-result,
+.order__delivery-price {
+    display: flex;
+    align-items: center;
+}
+
+.order__price-amount,
+.order__delivery-price {
+    @include font-family-2;
+    font-size: var(--m-size);
+}
+
+.order__promo-result {
+    font-size: var(--xs-size);
+}
+
+.order__total {
+    border-top: 2px solid var(--titles-color);
+    min-height: 54px;
+}
+
+.order__total-text {
+    display: flex;
+    align-items: center;
+    font-size: var(--m-size);
+}
+
+.order__total-price {
+    @include font-family-2;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.order__button {
+    height: 37px;
+    line-height: 37px;
+}

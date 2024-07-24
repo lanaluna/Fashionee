@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------
+// Корзина.
+// -----------------------------------------------------------------------
+
+
+
+.cart {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "order"
+                         "cart-list"
+                         "promocode";
+    padding-top: 60px;
+
+    @media (min-width: $media--tablet-start) {
+        grid-template-columns: 1fr 280px;
+        grid-template-rows: 1fr min-content;
+        grid-template-areas: "cart-list order"
+                             "promocode promocode";
+        gap: 0 50px;
+        padding: 120px var(--main-side-margin) 0;
+    }
+
+    @media (min-width: $media--desktop-start) {
+        padding: 120px var(--desktop-content-margin) 0;
+    }
+}
+
+
+
+.cart__goods {grid-area: cart-list; padding: var(--content-margin);}
+.cart__resume {grid-area: order; padding: var(--content-margin);}
+.cart__promocode {grid-area: promocode;}
+
+
+
+@import 'cart/cart-goods.scss';
+@import 'cart/order.scss';
