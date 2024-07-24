@@ -30,9 +30,11 @@
 
 .cart__goods {grid-area: cart-list; padding: var(--content-margin);}
 .cart__resume {grid-area: order; padding: var(--content-margin);}
-.cart__promocode {grid-area: promocode;}
+.cart__promocode {grid-area: promocode; padding: var(--content-margin);}
 
 
 
 @import 'cart/cart-goods.scss';
 @import 'cart/order.scss';
+@import 'cart/subscribe-mini.scss';
+@import 'content/find-us.scss/';

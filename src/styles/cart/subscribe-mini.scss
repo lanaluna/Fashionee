@@ -1,0 +1,66 @@
+// -----------------------------------------------------------------------
+// Доп. блок (подписка).
+// -----------------------------------------------------------------------
+
+
+
+.subscribe-mini {
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+
+    p {
+        font-size: var(--xs-size);
+        line-height: 1.7;
+        margin: 0;
+    }
+
+    @media (min-width: $media--tablet-start) {
+        max-width: 300px;
+    }
+}
+
+.subscribe-mini__form {    
+    display: flex;
+    align-items: end;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.subscribe-mini__input {
+    border: 0;
+    border-bottom: 1px solid var(--body-text-color--opacity20);
+    font-size: var(--s-size);
+    height: 38px;
+    line-height: 38px;
+    color: var(--body-text-color);
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.subscribe-mini__input:focus {
+    border-color: var(--green-color);
+    outline: 0;
+}
+
+.subscribe-mini__input::placeholder {
+    @include font-family-1;
+    font-size: var(--s-size);
+    color: var(--body-text-color);
+    opacity: .5;
+}
+
+.subscribe-mini__button {
+    width: 48px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        display: block;
+        width: 17px;
+        height: 10px;
+    }
+}

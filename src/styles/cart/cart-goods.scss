@@ -13,6 +13,7 @@
 .cart-list {
     @include reset-list;
     margin-top: -35px;
+    border-bottom: 2px solid var(--titles-color);
 }
 
 .cart-list__item {

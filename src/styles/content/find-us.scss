@@ -1,10 +1,11 @@
 // -----------------------------------------------------------------------
-// Подвал. Часть с cсоцсетями.
+// Соцсети
 // -----------------------------------------------------------------------
 
 
+.cart__promocode .find-us {margin-top: 30px;}
 
-.footer__social-header {
+.find-us__header {
     font-size: var(--m-size);
     line-height: 1.7;
     font-weight: 500;
@@ -12,7 +13,7 @@
     margin-bottom: 15px;
 }
 
-.footer__social {
+.find-us__social {
     @include reset-list;
     display: flex;
     align-items: center;
@@ -20,7 +21,7 @@
     font-weight: 600;
 }
 
-.footer__social li:not(:last-child)::after {
+.find-us__social li:not(:last-child)::after {
     content: "—";
     margin: 0 10px;
 }
