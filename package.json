@@ -1,29 +1,16 @@
 {
-  "name": "webpack-template",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "fashionee",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "set NODE_ENV=development&&webpack serve --open",
-    "dev": "set NODE_ENV=development&&webpack",
-    "build": "set NODE_ENV=production&&webpack"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "css-loader": "^7.1.2",
-    "html-loader": "^5.0.0",
-    "html-webpack-plugin": "^5.6.0",
-    "mini-css-extract-plugin": "^2.9.0",
-    "postcss": "^8.4.39",
-    "postcss-loader": "^8.1.1",
-    "postcss-preset-env": "^9.6.0",
-    "sass": "^1.77.8",
-    "sass-loader": "^14.2.1",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.93.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
+    "sass": "1.79.4",
+    "scss": "0.2.4",
+    "vite": "5.4.8"
   }
 }

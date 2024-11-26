@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Fashionee 2.0 Vite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header class="header">
+        <div class="header__top">
+          <div class="header__burger-menu">
+            <button type="button" aria-label="Открыть меню" class="burger-menu-button">
+              <svg class="logo" width="22" height="14" aria-hidden="true" focusable="false">
+                <use href="svg-sprite.svg#burger"></use>
+              </svg>
+            </button>
+          </div>
+  
+          <div class="header__logo">
+            <svg width="111" height="17" aria-hidden="true" focusable="false">
+              <use href="svg-sprite.svg#logo"></use>
+            </svg>
+          </div>
+  
+          <nav class="header__nav">
+            <ul class="top-menu">
+              <li class="top-menu__item"><a href="" class="top-menu__link">Home</a></li>
+              <li class="top-menu__item"><a href="" class="top-menu__link">Pages<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M3.5 5.25 7 8.75l3.5-3.5"/></svg></a></li>
+              <li class="top-menu__item"><a href="" class="top-menu__link">Shop<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M3.5 5.25 7 8.75l3.5-3.5"/></svg></a></li>
+              <li class="top-menu__item"><a href="" class="top-menu__link">Blog</a></li>
+              <li class="top-menu__item"><a href="" class="top-menu__link">Contact</a></li>
+            </ul>
+          </nav>
+  
+          <div class="header__tools tools-menu">
+            <button type="button" aria-label="Поиск" class="tools-menu__search-button">
+              <svg width="18" height="18" aria-hidden="true" focusable="false">
+                <use href="svg-sprite.svg#search"></use>
+              </svg>
+            </button>
+            <a href="" class="tools-menu__account-link">
+              <svg width="20" height="18" aria-hidden="true" focusable="false">
+                <use href="svg-sprite.svg#account"></use>
+              </svg>
+            </a>
+            <a href="" class="tools-menu__favorites">
+              <svg width="19" height="18" aria-hidden="true" focusable="false">
+                <use href="svg-sprite.svg#favorites"></use>
+              </svg>
+              <span class="tools-menu__amount">0</span>
+            </a>
+            <a href="" class="tools-menu__cart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" fill="none"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.92 1.667 3.42 5v11.667a1.667 1.667 0 0 0 1.666 1.666h11.667a1.667 1.667 0 0 0 1.666-1.666V5l-2.5-3.333h-10ZM3.42 5h15"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.253 8.333a3.334 3.334 0 0 1-6.667 0"/></svg>
+              <span class="tools-menu__amount">0</span>
+            </a>
+          </div>
+        </div>
+        <div class="header__logo-mobile">
+          <svg class="logo" width="111" height="17" aria-hidden="true" focusable="false">
+            <use href="svg-sprite.svg#logo"></use>
+          </svg>
+        </div>
+  
+        <div class="header__main">
+          <h1 class="header__title title-1">Shop</h1>
+          <nav class="header__breadcrumbs">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="">Home</a></li>
+              <li class="breadcrumbs__item">Shop</li>
+            </ul>
+          </nav>
+  
+          <picture class="header__img">
+            <img src="/main-img.png" alt="" class="header-img">
+          </picture>
+        </div>
+      </header>
+  
+  
+  
+  
+  
+  
+      <main class="main">
+        <div class="content">
+          <div class="search">
+            <form action="" class="search-form">
+              <input type="text" placeholder="Search" class="search-form__input">
+              <button type="submit" class="search-form__button">
+                <svg width="18" height="18" aria-hidden="true" focusable="false">
+                  <use href="svg-sprite.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+  
+          <div class="filter-container">
+            <div class="filter-open-mobile"><button class="button">Open filter</button></div>
+            <div class="filter">            
+              <div class="filter__close-mobile"><button class="filter__close-button">Close filter</button></div>
+              <div class="filter__part">
+                <h4 class="filter__header content__header">Categories</h4>
+                <ul class="filter__radio-list">
+                  <li><label><input type="radio" name="filter-category" name="filter-category" class="filter__radio"><span class="filter__radio-text">All</span></label></li>
+                  <li><label><input type="radio" name="filter-category" class="filter__radio"><span class="filter__radio-text">Man</span></label></li>
+                  <li><label><input type="radio" name="filter-category" class="filter__radio"><span class="filter__radio-text">Woman</span></label></li>
+                  <li><label><input type="radio" name="filter-category" class="filter__radio"><span class="filter__radio-text">Accessories</span></label></li>
+                  <li><label><input type="radio" name="filter-category" class="filter__radio"><span class="filter__radio-text">New Arrivals</span></label></li>
+                </ul>
+              </div>
+  
+              <div class="filter__part">
+                <h4 class="filter__header content__header">Price</h4>
+                <div class="range-slider">
+                  <input type="range" class="range-slider__input">
+                  <span class="slider-value slider-value--start">0</span>
+                  <input type="range" class="range-slider__input">
+                  <span class="slider-value slider-value--end">100</span>
+                  <div class="range-slider__track"></div>
+                  <div class="range-slider__active-track"></div>
+                </div>
+              </div>
+  
+              <div class="filter__part">
+                <h4 class="filter__header content__header">Colors</h4>
+                <ul class="filter__checkbox-list">
+                  <li>
+                    <label>
+                      <input type="checkbox" name="" class="filter__checkbox">
+                      <span class="filter__visual-checkbox">
+                        <svg width="15" height="16" aria-hidden="true" focusable="false"><use href="svg-sprite.svg#checkbox"></use></svg>
+                        <svg width="10" height="8" aria-hidden="true" focusable="false"><use href="svg-sprite.svg#checkbox-mark"></use></svg>
+                      </span>
+                      <span class="filter__checkbox-text">Black</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="" class="filter__checkbox">
+                      <span class="filter__visual-checkbox">
+                        <svg width="15" height="16" aria-hidden="true" focusable="false"><use href="svg-sprite.svg#checkbox"></use></svg>
+                        <svg width="10" height="8" aria-hidden="true" focusable="false"><use href="svg-sprite.svg#checkbox-mark"></use></svg>
+                      </span>
+                      <span class="filter__checkbox-text">Yellow</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="" class="filter__checkbox">
+                      <span class="filter__visual-checkbox">
+                        <svg width="15" height="16" aria-hidden="true" focusable="false"><use href="svg-sprite.svg#checkbox"></use></svg>
+                        <svg width="10" height="8" aria-hidden="true" focusable="false"><use href="svg-sprite.svg#checkbox-mark"></use></svg>
+                      </span>
+                      <span class="filter__checkbox-text">Red</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="" class="filter__checkbox">
+                      <span class="filter__visual-checkbox">
+                        <svg width="15" height="16" aria-hidden="true" focusable="false"><use href="svg-sprite.svg#checkbox"></use></svg>
+                        <svg width="10" height="8" aria-hidden="true" focusable="false"><use href="svg-sprite.svg#checkbox-mark"></use></svg>
+                      </span>
+                      <span class="filter__checkbox-text">Blue</span>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input type="checkbox" name="" class="filter__checkbox">
+                      <span class="filter__visual-checkbox">
+                        <svg width="15" height="16" aria-hidden="true" focusable="false"><use href="svg-sprite.svg#checkbox"></use></svg>
+                        <svg width="10" height="8" aria-hidden="true" focusable="false"><use href="svg-sprite.svg#checkbox-mark"></use></svg>
+                      </span>
+                      <span class="filter__checkbox-text">Green</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+  
+              <div class="filter__button">
+                <button class="button">Apply Filter</button>
+              </div>
+            </div>
+            </div>
+  
+            <div class="goods">
+              <div class="goods__header">
+                <div class="goods__found">There are <b>67</b> products in this category</div>
+                <div class="goods__sort">
+                  <div class="select" style="width:200px;">
+                    <select name="" id="">
+                      <option value="">By relevance</option>
+                      <option value="">By relevance</option>
+                      <option value="">Дешевле</option>
+                      <option value="">Дороже</option>
+                      <option value="">По новизне</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+  
+              <div id="goods-list"></div>
+              <div class="goods__paginator paginator" id="paginator"></div>
+            </div>
+  
+            <div class="reviewed">
+              <h4 class="content__header">Reviewed By You</h4>
+              <ul class="reviewed__list">
+                <li class="reviewed__item">
+                  <img src="/viewed-img.png" alt="Retro style handbag" class="reviewed__image">
+                  <div class="reviewed__text">
+                    <span class="reviewed__name">Retro style handbag</span>
+                    <span class="reviewed__price">$35.99</span>
+                    <span class="reviewed__old-price">$52.99</span>
+                  </div>
+                </li>
+                <li class="reviewed__item">
+                  <img src="/viewed-img.png" alt="Retro style handbag" class="reviewed__image">
+                  <div class="reviewed__text">
+                    <span class="reviewed__name">Retro style handbag</span>
+                    <span class="reviewed__price">$35.99</span>
+                  </div>
+                </li>
+                <li class="reviewed__item">
+                  <img src="/viewed-img.png" alt="Retro style handbag" class="reviewed__image">
+                  <div class="reviewed__text">
+                    <span class="reviewed__name">Textured turtleneck with zip</span>
+                    <span class="reviewed__price">$35.99</span>
+                    <span class="reviewed__old-price">$52.99</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="banner"><img src="/banner.png" alt="Скидки! Скидки!"></div>
+          </div> 
+      </main>
+  
+  
+  
+  
+    <div class="subscribe-place">
+      <div class="subscribe-place__block subscribe">
+        <h3>Newsletter</h3>
+        <p>Be the first to hear about deals,  offers and upcoming collections.</p>
+        <form action="" class="subscribe__form">
+          <input type="text" placeholder="Enter your email" class="subscribe__input">
+          <button type="submit" class="subscribe__button button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+      <footer class="footer">
+        <div class="footer__part-logo">
+          <div class="footer__logo">
+            <svg width="111" height="17" aria-hidden="true" focusable="false">
+              <use href="svg-sprite.svg#logo"></use>
+            </svg>
+          </div>
+          <p>Cillum eu id enim aliquip aute ullamco anim. Culpa deserunt nostrud excepteur voluptate.</p>
+        </div>
+        
+        <div class="footer__part-social find-us">
+          <div class="find-us__header">Find us here:</div>
+          <ul class="find-us__social"><li><a href="">FB</a></li><li><a href="">TW</a></li><li><a href="">INS</a></li><li><a href="">PT</a></li></ul>
+        </div>
+  
+        <div class="footer__part-about">
+          <h5>About</h5>
+          <ul class="footer__list">
+            <li><a href="">About us</a></li>
+            <li><a href="">Collections</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer__part-useful">
+          <h5>Useful Links</h5>
+          <ul class="footer__list">
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Terms of use</a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">Shipping details</a></li>
+            <li><a href="">FAQs</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer__part-newsletter">
+          <h5>Newsletter</h5>
+          <p>Subscribe to be the first to hear about deals,  offers and upcoming collections.</p>
+          <form action="" class="footer__form">
+            <input type="text" placeholder="Enter your email" class="footer__input">
+            <button type="submit" class="footer__button">
+              <svg width="24" height="24" aria-hidden="true" focusable="false">
+                <use href="svg-sprite.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+  
+        <div class="footer__bottom">
+          <div class="footer__bottom-copy">© All right reserved. Fashionee 2020</div>
+          <div class="footer__bottom-payments">
+            <div class="footer__pay-system-header">Payment methods:</div>
+            <div class="footer__pay-system"><img src="/visa.png" alt="Visa"></div>
+            <div class="footer__pay-system"><img src="/mastercard.png" alt="Mastercard"></div>
+            <div class="footer__pay-system"><img src="/paypal.png" alt="Paypal"></div>
+            <div class="footer__pay-system"><img src="/paoneer.png" alt="Paoneer"></div>
+          </div>
+        </div>
+      </footer>
+  
+  </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
